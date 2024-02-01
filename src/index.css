@@ -1,0 +1,11 @@
+@import url("./App.css");
+@import url("./css/AddTask.css");
+@import url("./css/ToDoItem.css");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
