@@ -1,0 +1,50 @@
+.xwrapper {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.todolist {
+  display: flex;
+  flex-direction: column;
+}
+.taskTitle-txt,
+.content {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.taskTitle-txt::placeholder,
+.content::placeholder {
+  color: #aaa;
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+.cancel-btn,
+.addTask-btn {
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transform: background-color 0.3 ease;
+}
+.cancel-btn {
+  background-color: #fff;
+  color: #fff;
+}
+.addTask-btn {
+  background-color: #4caf50;
+  color: #fff;
+}
+.addTask-btn::hover {
+  background-color: #45a049;
+}

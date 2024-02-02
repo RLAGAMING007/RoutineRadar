@@ -3,11 +3,11 @@ import React from "react";
 const AddTask = (props) => {
   return (
     <>
-      <div>
+      <div className="container">
         <div className="task-container">
           <div className="add-tasks">
-            <div className="form-check-input">
-              <input type="checkbox" value="" id="flexCheckDefault" />
+            <div class="custom-checkbox">
+              <input type="checkbox" />
             </div>
             <div className="task">
               <h2>{props.title}</h2>
