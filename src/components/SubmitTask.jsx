@@ -1,6 +1,6 @@
 import React from "react";
 
-const AddTask = (props) => {
+const SubmitTask = (props) => {
   return (
     <>
       <div className="container">
@@ -16,7 +16,7 @@ const AddTask = (props) => {
               </label>
             </div>
             <div className="task">
-              <h2>{props.title}</h2>
+              <h4>{props.title}</h4>
 
               <p>{props.discription}</p>
             </div>
@@ -27,4 +27,4 @@ const AddTask = (props) => {
   );
 };
 
-export default AddTask;
+export default SubmitTask;

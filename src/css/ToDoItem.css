@@ -38,8 +38,9 @@
   transform: background-color 0.3 ease;
 }
 .cancel-btn {
-  background-color: #fff;
+  background-color: rgb(221, 9, 9);
   color: #fff;
+  margin-right: 5px;
 }
 .addTask-btn {
   background-color: #4caf50;
@@ -47,4 +48,24 @@
 }
 .addTask-btn::hover {
   background-color: #45a049;
+}
+
+.add-button {
+  display: flex;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  background-color: #4caf50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: pointer;
+}
+.add-button:hover {
+  background-color: #64b568;
+  font-size: 15.5px;
+  transition: all 0.1s;
 }

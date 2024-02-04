@@ -1,8 +1,22 @@
+.xTaskWrapper {
+  display: flex;
+  justify-content: center;
+
+  height: auto;
+}
 .task-container {
   display: flex;
-  background: #f5f5f5;
-}
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 
+  margin-right: 200px;
+  max-width: 1600px;
+}
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .add-tasks {
   display: flex;
   gap: 10px;
@@ -35,7 +49,7 @@
 
 .check-input:checked + .checkbox {
   background: #26bfbf;
-  border: 2px solid #26bfbf;
+  border: 1px solid #26bfbf;
 }
 .check-input:checked + .checkbox svg path {
   stroke-dasharray: 500;
@@ -51,8 +65,8 @@
   border-radius: 50%;
   transform: scale(0);
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   z-index: -1;
 }
 .check-input:checked + .checkbox::before {

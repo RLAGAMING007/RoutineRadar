@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ToDoItem from "./components/ToDoItem";
-import AddTask from "./components/AddTask";
+import { Route, Routes } from "react-router-dom";
+import SubmitTask from "./components/SubmitTask";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -16,7 +17,7 @@ const App = () => {
       <ToDoItem onAdd={addTask} />
       {tasks.map((taskItem, index) => {
         return (
-          <AddTask
+          <SubmitTask
             key={index}
             id={index}
             title={taskItem.title}
