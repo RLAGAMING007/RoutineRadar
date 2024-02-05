@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SubmitTask from "./SubmitTask";
 import AddIcon from "@mui/icons-material/Add";
-import { Cancel } from "@mui/icons-material";
 
 const ToDoItem = (props) => {
   const [addTaskField, setAddTaskField] = useState(false);
