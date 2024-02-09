@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 
 const SubmitTask = (props) => {
+  const handleDelete = () => {
+    props.onDelete(props.id);
+  };
+
   return (
     <>
       <div className="container">
         <div className="task-container">
           <div className="add-tasks">
-            <div class="custom-checkbox">
+            <div className="custom-checkbox">
               <input
                 id={`input-${props.id}`}
                 type="checkbox"
@@ -20,10 +24,13 @@ const SubmitTask = (props) => {
             </div>
 
             <div className="task">
-              <h4>{props.title}</h4>
-
-              <p>{props.discription}</p>
+              <p>{props.title}</p>
             </div>
+          </div>
+        </div>
+        <div>
+          <div className="delete-btn">
+            <button onClick={handleDelete}>Delete</button>
           </div>
         </div>
       </div>

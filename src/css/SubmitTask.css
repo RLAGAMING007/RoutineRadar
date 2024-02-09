@@ -19,8 +19,12 @@
 }
 .add-tasks {
   display: flex;
+  align-items: center;
   gap: 10px;
   padding-left: 10px;
+}
+.title {
+  font-family: "Poppins", sans-serif;
 }
 .custom-checkbox {
   display: flex;

@@ -12,16 +12,25 @@ const App = () => {
     });
   };
 
+  const DeleteTask = (id) => {
+    setTasks((prevTasks) => {
+      return prevTasks.filter((taskItem, index) => {
+        return index !== id;
+      });
+    });
+  };
+
   return (
     <>
       <ToDoItem onAdd={addTask} />
+
       {tasks.map((taskItem, index) => {
         return (
           <SubmitTask
             key={index}
             id={index}
             title={taskItem.title}
-            discription={taskItem.discription}
+            onDelete={DeleteTask}
           />
         );
       })}

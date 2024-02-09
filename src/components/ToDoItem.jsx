@@ -7,7 +7,6 @@ const ToDoItem = (props) => {
 
   const [task, setTask] = useState({
     title: "",
-    discription: "",
   });
 
   const HandleChange = (e) => {
@@ -26,7 +25,6 @@ const ToDoItem = (props) => {
     props.onAdd(task);
     setTask({
       title: "",
-      discription: "",
     });
 
     e.preventDefault();
@@ -39,7 +37,6 @@ const ToDoItem = (props) => {
     setAddTaskField(!addTaskField);
     setTask({
       title: "",
-      discription: "",
     });
   };
 
@@ -59,16 +56,7 @@ const ToDoItem = (props) => {
                     onChange={HandleChange}
                   />
                 </div>
-                <div className="discription">
-                  <textarea
-                    name="discription"
-                    className="content"
-                    value={task.discription}
-                    placeholder="discription"
-                    onChange={HandleChange}
-                    row="3"
-                  />
-                </div>
+
                 <div className="buttons">
                   <button onClick={HandleCancelTask} className="cancel-btn">
                     Cancel
