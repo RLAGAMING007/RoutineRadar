@@ -24,13 +24,15 @@ const SubmitTask = (props) => {
             </div>
 
             <div className="task">
-              <p>{props.title}</p>
+              <p className="task-title">{props.title}</p>
             </div>
           </div>
         </div>
         <div>
-          <div className="delete-btn">
-            <button onClick={handleDelete}>Delete</button>
+          <div className="delete-btn-container">
+            <button className="delete-btn" onClick={handleDelete}>
+              Delete
+            </button>
           </div>
         </div>
       </div>

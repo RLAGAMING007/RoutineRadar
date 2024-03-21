@@ -42,12 +42,15 @@
   color: #fff;
   margin-right: 5px;
 }
-.addTask-btn {
-  background-color: #4caf50;
-  color: #fff;
+.cancel-btn:hover {
+  background-color: rgba(221, 9, 9, 0.897);
 }
-.addTask-btn::hover {
-  background-color: #45a049;
+.addTask-btn {
+  color: #fff;
+  background-color: #45a050;
+}
+.addTask-btn:hover {
+  background-color: #4caf49;
 }
 
 .add-button {

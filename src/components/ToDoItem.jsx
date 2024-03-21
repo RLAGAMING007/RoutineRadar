@@ -48,13 +48,22 @@ const ToDoItem = (props) => {
             {addTaskField == true ? (
               <div className="todoList">
                 <div className="taskTitle">
-                  <input
+                  <textarea
                     name="title"
                     className="taskTitle-txt"
                     value={task.title}
                     placeholder="Task"
                     onChange={HandleChange}
-                  />
+                    cols="10"
+                    rows="3"
+                  ></textarea>
+                  {/* <input
+                    name="title"
+                    className="taskTitle-txt"
+                    value={task.title}
+                    placeholder="Task"
+                    onChange={HandleChange}
+                  /> */}
                 </div>
 
                 <div className="buttons">
